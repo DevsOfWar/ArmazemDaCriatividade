@@ -58,8 +58,13 @@ body{
     transition: 0.3s;
 }
 
+#nav-main ul li ul li:hover a{
+    color: var(--cor-preto-corpo-texto);
+    transition: 0.3s;
+}
+
 #nav-main ul ul li{
-    background-color: #212322;
+    background-color: var(--cor-azul-padraoAC);
     float: left;
     position: relative;
     top: 25px;
@@ -157,7 +162,7 @@ body{
 
 .main-content-carousel{
     width: 100%;
-    height: 250px;
+    height: 50px;
     margin: 50px auto;
     overflow: hidden;
 }
@@ -166,13 +171,13 @@ body{
     display: flex;
     list-style: none;
     width: 100%;
-    height: 250px;
+    height: 50px;
     align-items: center;
 }
 
 .main-content-carousel img {
-    max-width: 400px;
-    max-height: 250px;
+    max-width: 200px;
+    max-height: 50px;
 }
 
 .main-content-carousel li{
@@ -183,5 +188,62 @@ body{
 
 @keyframes slide{
     0%{left: 0px}
-    100%{left: -1500px}
+    100%{left: -1000px}
+}
+
+footer {
+    background-color: var(--cor-azul-padraoAC);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px var(--cor-preto-corpo-texto) solid;
+}
+
+.footer-content{
+    padding: 16px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-footer-direitos-autorais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer{
+    width: 130px;
+    height: 50px;
+}
+
+.direitos-autorais{
+    margin-left: 20px;
+    font-family: var(--font-paragraf);
+    color: var(--cor-preto-corpo-texto);
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.social-medias{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.social-medias ul li{
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+}
+
+.social-medias-icon{
+    width: 35px;
+    height: 35px;
 }
