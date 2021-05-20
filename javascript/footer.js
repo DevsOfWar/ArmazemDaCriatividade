@@ -4,13 +4,13 @@ function footer() {
     footer.innerHTML = `
     
                 <div class="footer-content">
-                    <div class="logo-footer-direitos-autorais">
+                    <div class="logo-footer-copyright">
                         <div class="logo-footer">
                             <a href="../html/home.html">
                                 <img src="https://github.com/DevsOfWar/ArmazemDaCriatividade/blob/main/img-logo-paleta-cores-icons/Logo_ACC_Mono_Preta.png?raw=true" height="100%" width="130px" alt="logo-armazem">
                             </a>
                         </div>
-                        <div class="direitos-autorais">
+                        <div class="copyright">
                             <p>© Devs of War. All rights reserved</p>
                         </div>
                     </div>                    
