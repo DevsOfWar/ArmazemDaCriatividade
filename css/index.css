@@ -1,7 +1,7 @@
 :root{
     --cor-azul-padraoAC: #23AEB7;
     --cor-vermelho-porto: #EA3B5A;
-    --cor--brancogelo: #f1f1f0;
+    --cor-branco-gelo: #f1f1f0;
     --cor-amarelo-lemon: #F3BF08;
     --cor-roxoAC: #503488;
     --cor-preto-corpo-texto: #212322;
@@ -16,7 +16,7 @@
 }
 
 body{
-    background-color: #f1f1f0;
+    background-color: var(--cor-branco-gelo);
 }
 
 #header-main{
@@ -41,7 +41,7 @@ body{
 #nav-main a{
     text-decoration: none;    
     color: #23AEB7;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-title);
 }
 
 #nav-main ul ul{
@@ -54,17 +54,22 @@ body{
 }
 
 #nav-main ul li:hover a{
-    color: #f1f1f0;
+    color: var(--cor-branco-gelo);
+    transition: 0.3s;
+}
+
+#nav-main ul li ul li:hover a{
+    color: var(--cor-preto-corpo-texto);
     transition: 0.3s;
 }
 
 #nav-main ul ul li{
-    background-color: #212322;
+    background-color: var(--cor-azul-padraoAC);
     float: left;
     position: relative;
     top: 25px;
-    color: #23AEB7;
-    font-family: 'Poppins', sans-serif;
+    color: var(--cor-azul-padraoAC);
+    font-family: var(--font-title);
     padding: 10px 0;
 }
 
@@ -73,7 +78,7 @@ body{
 }
 
 #nav-main ul ul li:hover{
-    background-color: #23AEB7;
+    background-color: var(--cor-azul-padraoAC);
     transition: 0.3s;
 }
 
@@ -100,11 +105,11 @@ body{
 
 .main-content{
     width: 100%;
-    height: 100vr;
+    height: 100vh;
 }
 
 .main-top-background-foto{  
-    background-image: url('https://imagens.ne10.uol.com.br/img/imagens/2020/02/01/98abe53ff9_armaze%CC%81m-da-criatividade-caruaru.jpg');    
+    background-image: url('/img-logo-paleta-cores-icons/background-armazem-da-criatividade.jpg');    
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -126,15 +131,15 @@ body{
 }
 
 .main-top-text-title{
-    font-family: 'Poppins', sans-serif;
-    color: #23AEB7;
+    font-family: var(--font-title);
+    color: var(--cor-azul-padraoAC);
     font-size: 50px;
     text-align: left;
 }
 
 .main-top-text-paragraf{
-    font-family: 'Open Sans', sans-serif;
-    color: #f1f1f0;
+    font-family: var(--font-paragraf);
+    color: var(--cor-branco-gelo);
     font-size: 20px;
     text-align: left;
     margin-top: 100px;
@@ -183,13 +188,62 @@ body{
 
 @keyframes slide{
     0%{left: 0px}
-    100%{left: -1500px}
+    100%{left: -1000px}
 }
 
-#topo {
-    float: right;
-    padding: 0 46px;
-    color: #212322;
-    margin-top: -20px;
-    font-size: 17px;
+footer {
+    background-color: var(--cor-azul-padraoAC);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px var(--cor-preto-corpo-texto) solid;
+}
+
+.footer-content{
+    padding: 16px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-footer-direitos-autorais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer{
+    width: 130px;
+    height: 50px;
+}
+
+.direitos-autorais{
+    margin-left: 20px;
+    font-family: var(--font-paragraf);
+    color: var(--cor-preto-corpo-texto);
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.social-medias{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.social-medias ul li{
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+}
+
+.social-medias-icon{
+    width: 35px;
+    height: 35px;
 }
