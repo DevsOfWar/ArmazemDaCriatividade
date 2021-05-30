@@ -5,7 +5,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 2px var(--cor-preto-corpo-texto) solid;
+    border-top: 500px var(--cor-preto-corpo-texto) solid;
 }
 
 .footer-content {
