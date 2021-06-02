@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/header.css' %}">
-    <link rel="stylesheet" href="{% static 'footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -29,27 +29,16 @@
         <h2>Startups</h2>
     </div>
 
-
     <main>
-
-        <div id="pesquisa">
+        <div id="pesquisa_startup">
             <i id="lupa" class="fas fa-search"></i>
             <form id="form1" action="">
                 <input id="entradaForm" type="search">
             </form>
             <br>
-            <form id="form2" action="">
-                <label for="Startups"></label>
-                <select name="" id="">
-                    <option value="Startup1">Startup1</option>
-                    <option value="Startup2">Startup2</option>
-                    <option value="Startup3">Startup3</option>
-                    <option value="Startup4">Startup4</option>
-                </select>
-            </form>
-
         </div>
         <div id="conteudoPrincipal">
+            {% for i in '123456'|make_list %}
             <div class="conteudoInterno">
                 <div class="conteudoImagem">
                     <img id="imagem" src="{% static 'img/como-montar-uma-startup.jpg' %}" alt="">
@@ -61,94 +50,8 @@
                         molestiae nostrum cumque qui, architecto officiis.</p>
                 </div>
             </div>
-            <div class="conteudoInterno">
-                <div class="conteudoImagem">
-                    <img id="imagem" src="{% static 'img/como-montar-uma-startup.jpg' %}" alt="">
-                </div>
-                <div class="conteudoTexto">
-                    <h2>Startup</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error deleniti quisquam totam?
-                        Eligendi modi hic animi quos doloremque illo, perspiciatis doloribus quidem voluptates,
-                        molestiae nostrum cumque qui, architecto officiis.</p>
-                </div>
-            </div>
-            <div class="conteudoInterno">
-                <div class="conteudoImagem">
-                    <img id="imagem" src="{% static 'img/como-montar-uma-startup.jpg' %}" alt="">
-                </div>
-                <div class="conteudoTexto">
-                    <h2>Startup</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error deleniti quisquam totam?
-                        Eligendi modi hic animi quos doloremque illo, perspiciatis doloribus quidem voluptates,
-                        molestiae nostrum cumque qui, architecto officiis.</p>
-                </div>
-            </div>
-            <div class="conteudoInterno">
-                <div class="conteudoImagem">
-                    <img id="imagem" src="{% static 'img/como-montar-uma-startup.jpg' %}" alt="">
-                </div>
-                <div class="conteudoTexto">
-                    <h2>Startup</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error deleniti quisquam totam?
-                        Eligendi modi hic animi quos doloremque illo, perspiciatis doloribus quidem voluptates,
-                        molestiae nostrum cumque qui, architecto officiis.</p>
-                </div>
-            </div>
-            <div class="conteudoInterno">
-                <div class="conteudoImagem">
-                    <img id="imagem" src="{% static 'img/como-montar-uma-startup.jpg' %}" alt="">
-                </div>
-                <div class="conteudoTexto">
-                    <h2>Startup</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error deleniti quisquam totam?
-                        Eligendi modi hic animi quos doloremque illo, perspiciatis doloribus quidem voluptates,
-                        molestiae nostrum cumque qui, architecto officiis.</p>
-                </div>
-            </div>
-            <div class="conteudoInterno">
-                <div class="conteudoImagem">
-                    <img id="imagem" src="{% static 'img/como-montar-uma-startup.jpg' %}" alt="">
-                </div>
-                <div class="conteudoTexto">
-                    <h2>Startup</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error deleniti quisquam totam?
-                        Eligendi modi hic animi quos doloremque illo, perspiciatis doloribus quidem voluptates,
-                        molestiae nostrum cumque qui, architecto officiis.</p>
-                </div>
-            </div>
-            <div class="conteudoInterno">
-                <div class="conteudoImagem">
-                    <img id="imagem" src="{% static 'img/como-montar-uma-startup.jpg' %}" alt="">
-                </div>
-                <div class="conteudoTexto">
-                    <h2>Startup</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error deleniti quisquam totam?
-                        Eligendi modi hic animi quos doloremque illo, perspiciatis doloribus quidem voluptates,
-                        molestiae nostrum cumque qui, architecto officiis.</p>
-                </div>
-            </div>
-            <div class="conteudoInterno">
-                <div class="conteudoImagem">
-                    <img id="imagem" src="{% static 'img/como-montar-uma-startup.jpg' %}" alt="">
-                </div>
-                <div class="conteudoTexto">
-                    <h2>Startup</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error deleniti quisquam totam?
-                        Eligendi modi hic animi quos doloremque illo, perspiciatis doloribus quidem voluptates,
-                        molestiae nostrum cumque qui, architecto officiis.</p>
-                </div>
-            </div>
-            <div class="conteudoInterno">
-                <div class="conteudoImagem">
-                    <img id="imagem" src="{% static 'img/como-montar-uma-startup.jpg' %}" alt="">
-                </div>
-                <div class="conteudoTexto">
-                    <h2>Startup</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error deleniti quisquam totam?
-                        Eligendi modi hic animi quos doloremque illo, perspiciatis doloribus quidem voluptates,
-                        molestiae nostrum cumque qui, architecto officiis.</p>
-                </div>
-            </div>
+            {% endfor %}
+
         </div>
 
 

@@ -44,7 +44,7 @@ function header() {
             <div class="logo-main">
                 <div class="logo">
                     <a href="/">
-                    <img src="https://github.com/DevsOfWar/ArmazemDaCriatividade/blob/main/img-logo-paleta-cores-icons/Logo_ACC_Mono_Branca.png?raw=true" height="100%" width="130px" alt="logo-armazem">
+                    <img src="static/img-logo-paleta-cores-icons/Logo_ACC_Mono_Branca.png?raw=true" height="100%" width="130px" alt="logo-armazem">
                     </a>
 
                 </div>

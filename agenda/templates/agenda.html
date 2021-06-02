@@ -3,10 +3,6 @@
 <html lang="pt-BR">
 
 <head>
-    import { Calendar } from '@fullcalendar/core';
-    import dayGridPlugin from '@fullcalendar/daygrid';
-    import timeGridPlugin from '@fullcalendar/timegrid';
-    import listPlugin from '@fullcalendar/list';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +13,7 @@
     <link rel="stylesheet" href="{% static 'css/footer.css' %}">
     <link rel="stylesheet" href="{% static 'css/agenda.css' %}">
     <link href='{% static 'css/main.min.css' %}' rel='stylesheet' />
-    <link rel="stylesheet" href="{% static 'js/main.min.js' %}">
+    <link rel="stylesheet" href="{% static 'css/main.min.css' %}">
     
 
     <title>Agenda</title>
@@ -29,15 +25,14 @@
 
     <main>
         <header id="header-main"></header>
-        <div>
             <div id="agenda">
                 <h2>Agenda</h2>
             </div>
             <div id='calendar'></div>
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
-                    var calendarEl = document.getElementById('calendar');
-                    var calendar = new FullCalendar.Calendar(calendarEl, {
+                    var div_cal_1 = document.getElementById('calendar');
+                    var calendar_ACC = new FullCalendar.Calendar(div_cal_1, {
                         locale: 'pt-br',
                         headerToolbar: {
                             left: 'prev,next today',
@@ -45,7 +40,7 @@
                             right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
                         }
                     });
-                    calendar.render();
+                    calendar_ACC.render();
                 });
             </script>
             <div class="main-content">
@@ -66,11 +61,11 @@
 
             <div id="linha"></div>
 
-            <div id='calendar2'></div>
+            <div id='calendar2' style="display: inline-block"></div>
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
-                    var calendarEl = document.getElementById('calendar2');
-                    var calendar = new FullCalendar.Calendar(calendarEl, {
+                    var div_cal_2 = document.getElementById('calendar2');
+                    var calendar_part = new FullCalendar.Calendar(div_cal_2, {
                         locale: 'pt-br',
                         headerToolbar: {
                             left: 'prev,next today',
@@ -78,7 +73,7 @@
                             right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
                         }
                     });
-                    calendar.render();
+                    calendar_part.render();
                 });
             </script>
 
@@ -99,14 +94,14 @@
                 </div>
             </div>
 
-            <footer id="footer-main"></footer>
+    <footer id="footer-main"></footer>
     </main>
+    
     <script src='{% static 'js/main.min.js' %}'></script>
     <script src="{% static 'js/header.js' %}"></script>
     <script src="{% static 'js/footer.js' %}"></script>
-    </main>
-</body>
 
+</body>
 <a id="topo" href="#top">VOLTAR AO TOPO</a>
 
 </html>
