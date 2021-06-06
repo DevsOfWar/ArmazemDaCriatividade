@@ -16,95 +16,64 @@
 
 body {
     background-color: var(--cor-preto-corpo-texto);
+    font-size: 1em;
 }
 
-#agenda  {
+#principal {
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.titulo-pagina {
+    /* Agenda */
+    width: 260px;
+    font-size: 4em;
     font-family: 'Poppins', sans-serif;
     color: var(--cor-azul-padraoAC);
-    font-size: 40px;
-    margin-top: 4pc;
-    margin-left: 162px;
+    margin: 50px 0 20px;
 }
 
-.main-content {
-    width: 100%;
-    height: 100vr;
-}
-
-.main-top-text-content {
-    padding: 60px 0px 0px 160px;
-}
-
-.main-top-text-content-left {
-    width: 40%;
-    display: grid;
-}
-
-.main-top-text-title {
+.titulo-texto, .titulo-texto2  {
+    /* Armazem da criatividade - Parceiros do Armazém*/
     font-family: 'Poppins', sans-serif;
-    color: #23AEB7;
-    font-size: 17px;
-    margin-bottom: 10px;
-}
-
-.main-top-text-paragraf {
-    font-family: 'Open Sans', sans-serif;
-    color: #f1f1f0;
-    font-size: 20px;
+    color: var(--cor-branco-gelo);
+    font-size: 0.9em;
+    margin-top: 50px;
+    width: 500px;
     text-align: justify;
 }
 
+.titulo-texto2 {
+    /* Parceiros do Armazém */
+    margin-top: 120px;
+
+}
+
+.titulo-texto h3, .titulo-texto2 h3 {
+    color: var(--cor-azul-padraoAC);
+    font-size: 2.2em;
+    margin-bottom: 5px;
+}
+
 #calendar {
-    width: 800px;
-    height: 600px;
-    margin-top: 18pc;
-    margin-left: 20pc;
-    position: absolute;
+    width: 100%;
+    display: inline-block;
+    margin-top: 40px;
+    color: var(--cor-branco-gelo);
+}
+
+#calendar2 {
+    width: 100%;
+    display: inline-block;
+    margin-top: 40px;
     color: var(--cor-branco-gelo);
 }
 
 #linha {
     border-bottom: solid 10px #23AEB7;
-    width: 80%;
-    margin-left: 170px;
-    margin-top: 50pc;
-}
-
-.main-content2 {
     width: 100%;
-    height: 100vr;
-}
-
-.main-top-text-content2 {
-    padding: 100px 10px 200px 160px;
-}
-
-.main-top-text-content-left2 {
-    width: 40%;
-    display: grid;
-}
-
-.main-top-text-title2 {
-    font-family: 'Poppins', sans-serif;
-    color: #23AEB7;
-    font-size: 17px;
-    margin-bottom: 10px;
-}
-
-.main-top-text-paragraf2 {
-    font-family: 'Open Sans', sans-serif;
-    color: #f1f1f0;
-    font-size: 20px;
-    text-align: justify;
-}
-
-#calendar2 {
-    width: 800px;
-    height: 600px;
-    margin-top: 18pc;
-    margin-left: 20pc;
-    position: absolute;
-    color: var(--cor-branco-gelo);
+    margin-top: 160px;
 }
 
 #topo {

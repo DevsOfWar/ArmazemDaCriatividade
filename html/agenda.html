@@ -2,10 +2,7 @@
 <html lang="pt-BR">
 
 <head>
-    import { Calendar } from '@fullcalendar/core';
-    import dayGridPlugin from '@fullcalendar/daygrid';
-    import timeGridPlugin from '@fullcalendar/timegrid';
-    import listPlugin from '@fullcalendar/list';
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +14,7 @@
     <link rel="stylesheet" href="/css/agenda.css">
     <link href='/assets/css/main.min.css' rel='stylesheet' />
     <link rel="stylesheet" href="/assets/js/main.min.js">
-    
+
 
     <title>Agenda</title>
 
@@ -28,16 +25,24 @@
 
     <main>
         <header id="header-main"></header>
-        <div>
-            <div id="agenda">
-                <h2>Agenda</h2>
+
+        <div id="principal"> <!--Iniciio do Principal-->
+            <div>
+                <h2 class="titulo-pagina">Agenda</h2>
+            </div>
+            <div class="titulo-texto">
+                <h3>Armazém da Criatividade</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolorem minus aliquam quidem
+                    eaque aperiam voluptatum eligendi repellat, dolorum, optio enim cumque beatae hic itaque?
+                    Possimus eaque dolorum nesciunt expedita!
+
+                </p>
             </div>
             <div id='calendar'></div>
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
                     var calendarEl = document.getElementById('calendar');
                     var calendar = new FullCalendar.Calendar(calendarEl, {
-                        locale: 'pt-br',
                         headerToolbar: {
                             left: 'prev,next today',
                             center: 'title',
@@ -47,30 +52,21 @@
                     calendar.render();
                 });
             </script>
-            <div class="main-content">
-                <div class="main-top-text-content">
-                    <div class="main-top-text-content-left">
-                        <div class="main-top-text-title">
-                            <h1>Armazém da Criatividade</h1>
-                        </div>
-                        <div class="main-top-text-paragraf">
-                            <p>
-                                Lorem ipsum neque adipiscing cras vestibulum curabitur,
-                                turpis lobortis tortor suspendisse varius in, proin vulputate
-                                dictumst hac fringilla.
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <div id="linha"></div>
 
+            <div class="titulo-texto2">
+                <h3>Parceiros do Armazém</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolorem minus aliquam quidem
+                    eaque aperiam voluptatum eligendi repellat, dolorum, optio enim cumque beatae hic itaque?
+                    Possimus eaque dolorum nesciunt expedita!
+                </p>
+            </div>
             <div id='calendar2'></div>
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
                     var calendarEl = document.getElementById('calendar2');
                     var calendar = new FullCalendar.Calendar(calendarEl, {
-                        locale: 'pt-br',
                         headerToolbar: {
                             left: 'prev,next today',
                             center: 'title',
@@ -81,24 +77,9 @@
                 });
             </script>
 
-            <div class="main-content2">
-                <div class="main-top-text-content2">
-                    <div class="main-top-text-content-left2">
-                        <div class="main-top-text-title2">
-                            <h1>Parcerios do Armazém</h1>
-                        </div>
-                        <div class="main-top-text-paragraf2">
-                            <p>
-                                Lorem ipsum neque adipiscing cras vestibulum curabitur,
-                                turpis lobortis tortor suspendisse varius in, proin vulputate
-                                dictumst hac fringilla.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div> <!-- Fim do Principol-->
 
-            <footer id="footer-main"></footer>
+        <footer id="footer-main"></footer>
     </main>
     <script src='/assets/js/main.min.js'></script>
     <script src="../javascript/header.js"></script>
