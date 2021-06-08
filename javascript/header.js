@@ -1,14 +1,14 @@
 function header() {
-   const header = document.getElementById("header-main")   
-   header.innerHTML = 
-   `
+    const header = document.getElementById("header-main")
+    header.innerHTML =
+        `
    <nav id="nav-main">
             <ul id="menu-nav-principal">
                 <li>
                     <a href="#">SOBRE NÓS</a>
                 </li>
                 <li>
-                    <a href="../html/programas.html">PROGRAMAS</a>
+                    <a href="programas.html">PROGRAMAS</a>
                     <ul>
                         <li><a href="#">MIND THE BIZZ</a></li>
                         <li><a href="#">INCUBAÇÃO</a></li>
@@ -21,7 +21,7 @@ function header() {
                     <a href="#">HUB</a>
                 </li>
                 <li>
-                    <a href="#">AGENDA</a>
+                    <a href="agenda.html">AGENDA</a>
                     <ul>
                         <li><a href="#">CALENDÁRIO DO ARMAZÉM</a></li>
                         <li><a href="#">CALENDÁRIO DOS PARCEIROS</a></li>
@@ -31,15 +31,17 @@ function header() {
                     <a href="#">CORPORATES</a>
                 </li>
                 <li>
-                    <a href="#">STARTUPS</a>
+                    <a href="startup.html">STARTUPS</a>
                     <ul>
                         <li><a href="#">CONTADOR</a></li>
                         <li><a href="#">LOCALIZAÇÃO</a></li>
-                        <li><a href="#">LISTA DE STARTUPS</a></li>
+                        <li><a href="startup.html">LISTA DAS STARTUPS</a></li>
                         <li><a href="#">CADASTRO DE NOVAS FEATURES</a></li>
                     </ul>
                 </li>
-                    
+                <li>
+                <a href="#">BLOG ARMAZÉM</a>
+            </li>
                 </ul>           
             <div class="logo-main">
                 <div class="logo">
