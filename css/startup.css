@@ -27,7 +27,7 @@ body {
 }
 
 .galeria {
-    border: 2px solid var(--cor-azul-padraoAC);
+    border: 2px solid var(--cor-roxoAC);
     border-radius: 10px;
     width: 260px;
     max-height: 310px;
