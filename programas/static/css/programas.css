@@ -104,7 +104,7 @@ body {
 }
 
 .inc-img {
-    background-image: url('https://imagens.ne10.uol.com.br/img/imagens/2020/02/01/98abe53ff9_armaze%CC%81m-da-criatividade-caruaru.jpg');
+    background-image: url('../img/armazém-da-criatividade-caruaru.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -179,7 +179,7 @@ body {
 }
 
 .img1 {
-    background-image: url('https://imagens.ne10.uol.com.br/img/imagens/2020/02/01/98abe53ff9_armaze%CC%81m-da-criatividade-caruaru.jpg');
+    background-image: url('../img/armazém-da-criatividade-caruaru.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 340px;
@@ -193,7 +193,7 @@ body {
 .img2 {
     width: 340px;
     height: 200px;
-    background-image: url('https://imagens.ne10.uol.com.br/img/imagens/2020/02/01/98abe53ff9_armaze%CC%81m-da-criatividade-caruaru.jpg');
+    background-image: url('../img/armazém-da-criatividade-caruaru.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -205,7 +205,7 @@ body {
 .img3 {
     width: 340px;
     height: 200px;
-    background-image: url('https://imagens.ne10.uol.com.br/img/imagens/2020/02/01/98abe53ff9_armaze%CC%81m-da-criatividade-caruaru.jpg');
+    background-image: url('../img/armazém-da-criatividade-caruaru.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -217,13 +217,13 @@ body {
 .img4 {
     width: 340px;
     height: 200px;
-    background-image: url('https://imagens.ne10.uol.com.br/img/imagens/2020/02/01/98abe53ff9_armaze%CC%81m-da-criatividade-caruaru.jpg');
+    background-image: url('../img/armazém-da-criatividade-caruaru.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
     bottom: 0;
     right: 0;
-    border: 3px solid var(---cor-azul-padraoAC);
+    border: 3px solid var(--cor-azul-padraoAC);
 }
 
 .oil-text {
@@ -259,7 +259,7 @@ body {
 }
 
 .led-img {
-    background-image: url('https://imagens.ne10.uol.com.br/img/imagens/2020/02/01/98abe53ff9_armaze%CC%81m-da-criatividade-caruaru.jpg');
+    background-image: url('../img/armazém-da-criatividade-caruaru.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 31%;
