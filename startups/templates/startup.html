@@ -36,7 +36,7 @@
                 <div id="galeria-postagem">
 
                     <div class="postagem">
-                        <img src="/img/fases-de-uma-startup.jpg" alt="startup">
+                        <img src="{% static 'img/fases-de-uma-startup.jpg' %}" alt="startup">
                         <h2> Motivos para se tornar nosso parceiro</h2>
 
                         <div id="postagem-paragrafo1">
@@ -97,7 +97,7 @@
 
                 {% for i in '123456'|make_list %}
                 <div class="galeria">
-                    <img src="{% static 'img/startups-01.png' %}" alt="startup">
+                    <img src="{% static 'img/startups-0'|add:i|add:'.png' %}" alt="startup">
                     <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, sequi
                         exercitationem sed explicabo rem consequatur illum architecto molestias nesciunt? Aliquid
                         nobis praesentium odit ducimus libero expedita minus saepe nesciunt tempora!</p>
