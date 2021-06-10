@@ -1,6 +1,6 @@
 function header() {
-   const header = document.getElementById("header-main")   
-   header.innerHTML = 
+   const header = document.getElementById("header-main")
+   header.innerHTML =
    `
    <nav id="nav-main">
             <ul id="menu-nav-principal">
@@ -35,16 +35,18 @@ function header() {
                     <ul>
                         <li><a href="#">CONTADOR</a></li>
                         <li><a href="#">LOCALIZAÇÃO</a></li>
-                        <li><a href="#">LISTA DE STARTUPS</a></li>
+                        <li><a href="startups">LISTA DAS STARTUPS</a></li>
                         <li><a href="#">CADASTRO DE NOVAS FEATURES</a></li>
                     </ul>
                 </li>
-                    
-                </ul>           
+                <li>
+                    <a href="#">BLOG ARMAZÉM</a>
+                </li>
+                </ul>            
             <div class="logo-main">
                 <div class="logo">
                     <a href="/">
-                    <img src="static/img-logo-paleta-cores-icons/Logo_ACC_Mono_Branca.png?raw=true" height="100%" width="130px" alt="logo-armazem">
+                    <img src="static/img-logo-paleta-cores-icons/Logo_ACC_Mono_Branca.png" height="100%" width="130px" alt="logo-armazem">
                     </a>
 
                 </div>

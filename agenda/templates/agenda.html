@@ -6,14 +6,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/header.css' %}">
     <link rel="stylesheet" href="{% static 'css/footer.css' %}">
     <link rel="stylesheet" href="{% static 'css/agenda.css' %}">
-    <link href='{% static 'css/main.min.css' %}' rel='stylesheet' />
-    <link rel="stylesheet" href="{% static 'css/main.min.css' %}">
+    <link rel='stylesheet' href="{% static 'css/main.min.css' %}">
     
 
     <title>Agenda</title>
@@ -25,76 +23,62 @@
 
     <main>
         <header id="header-main"></header>
-            <div id="agenda">
-                <h2>Agenda</h2>
+
+        <!--Inicio do Principal-->
+        <div id="principal">
+            <div>
+                <h2 class="titulo-pagina">Agenda</h2>
+            </div>
+            <div class="titulo-texto">
+                <h3>Armazém da Criatividade</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolorem minus aliquam quidem
+                    eaque aperiam voluptatum eligendi repellat, dolorum, optio enim cumque beatae hic itaque?
+                    Possimus eaque dolorum nesciunt expedita!
+
+                </p>
             </div>
             <div id='calendar'></div>
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
-                    var div_cal_1 = document.getElementById('calendar');
-                    var calendar_ACC = new FullCalendar.Calendar(div_cal_1, {
-                        locale: 'pt-br',
+                    var div_calendar_armazem = document.getElementById('calendar');
+                    var calendar_armazem = new FullCalendar.Calendar(div_calendar_armazem, {
                         headerToolbar: {
                             left: 'prev,next today',
                             center: 'title',
                             right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
                         }
                     });
-                    calendar_ACC.render();
+                    calendar_armazem.render();
                 });
             </script>
-            <div class="main-content">
-                <div class="main-top-text-content">
-                    <div class="main-top-text-content-left">
-                        <div class="main-top-text-title">
-                            <h1>Armazém da Criatividade</h1>
-                        </div>
-                        <div class="main-top-text-paragraf">
-                            <p>
-                                Lorem ipsum neque adipiscing cras vestibulum curabitur,
-                                turpis lobortis tortor suspendisse varius in, proin vulputate
-                                dictumst hac fringilla.
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <div id="linha"></div>
 
-            <div id='calendar2' style="display: inline-block"></div>
+            <div class="titulo-texto2">
+                <h3>Parceiros do Armazém</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolorem minus aliquam quidem
+                    eaque aperiam voluptatum eligendi repellat, dolorum, optio enim cumque beatae hic itaque?
+                    Possimus eaque dolorum nesciunt expedita!
+                </p>
+            </div>
+            <div id='calendar2'></div>
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
-                    var div_cal_2 = document.getElementById('calendar2');
-                    var calendar_part = new FullCalendar.Calendar(div_cal_2, {
-                        locale: 'pt-br',
+                    var div_calendar_parceiros = document.getElementById('calendar2');
+                    var calendar_parceiros = new FullCalendar.Calendar(div_calendar_parceiros, {
                         headerToolbar: {
                             left: 'prev,next today',
                             center: 'title',
                             right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
                         }
                     });
-                    calendar_part.render();
+                    calendar_parceiros.render();
                 });
             </script>
 
-            <div class="main-content2">
-                <div class="main-top-text-content2">
-                    <div class="main-top-text-content-left2">
-                        <div class="main-top-text-title2">
-                            <h1>Parcerios do Armazém</h1>
-                        </div>
-                        <div class="main-top-text-paragraf2">
-                            <p>
-                                Lorem ipsum neque adipiscing cras vestibulum curabitur,
-                                turpis lobortis tortor suspendisse varius in, proin vulputate
-                                dictumst hac fringilla.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div> <!-- Fim do Principal-->
 
-    <footer id="footer-main"></footer>
+        <footer id="footer-main"></footer>
     </main>
     
     <script src='{% static 'js/main.min.js' %}'></script>

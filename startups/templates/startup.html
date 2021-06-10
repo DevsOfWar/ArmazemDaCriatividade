@@ -3,18 +3,19 @@
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/header.css' %}">
     <link rel="stylesheet" href="{% static 'css/footer.css' %}">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/startup.css' %}">
+    <link rel='stylesheet' href='{% static 'css/main.min.css' %}'>
+
+
 
     <title>Startups</title>
 
@@ -23,53 +24,98 @@
 
 <body onload="header(), footer()">
 
-    <header id="header-main"></header>
-
-    <div id="startups">
-        <h2>Startups</h2>
-    </div>
-
     <main>
-        <div id="pesquisa_startup">
-            <i id="lupa" class="fas fa-search"></i>
-            <form id="form1" action="">
-                <input id="entradaForm" type="search">
-            </form>
-            <br>
-        </div>
-        <div id="conteudoPrincipal">
-            {% for i in '123456'|make_list %}
-            <div class="conteudoInterno">
-                <div class="conteudoImagem">
-                    <img id="imagem" src="{% static 'img/como-montar-uma-startup.jpg' %}" alt="">
-                </div>
-                <div class="conteudoTexto">
-                    <h2>Startup</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error deleniti quisquam totam?
-                        Eligendi modi hic animi quos doloremque illo, perspiciatis doloribus quidem voluptates,
-                        molestiae nostrum cumque qui, architecto officiis.</p>
-                </div>
+        <header id="header-main"></header>
+
+        <!--Iniciio do Principal-->
+        <div id="principal">
+            <div>
+                <h2 class="titulo-pagina">Startups</h2>
+
+                <!-- Inicio da Galeria-Postagem-->
+                <div id="galeria-postagem">
+
+                    <div class="postagem">
+                        <img src="/img/fases-de-uma-startup.jpg" alt="startup">
+                        <h2> Motivos para se tornar nosso parceiro</h2>
+
+                        <div id="postagem-paragrafo1">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, beatae aspernatur?
+                                Quibusdam ipsa soluta expedita, nisi consequuntur dolor perspiciatis asperiores aliquam
+                                ut sapiente officia aspernatur temporibus nobis dolorum, porro numquam?</p>
+                            <img src="{% static 'img/1.jpg' %}" alt="">
+
+                        </div>
+                        <div id="postagem-paragrafo2">
+                            <img src="{% static 'img/2.jpg' %}" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, beatae aspernatur?
+                                Quibusdam ipsa soluta expedita, nisi consequuntur dolor perspiciatis asperiores aliquam
+                                ut sapiente officia aspernatur temporibus nobis dolorum, porro numquam?</p>
+                        </div>
+
+                        <div id="postagem-paragrafo3">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, beatae aspernatur?
+                                Quibusdam ipsa soluta expedita, nisi consequuntur dolor perspiciatis asperiores aliquam
+                                ut sapiente officia aspernatur temporibus nobis dolorum, porro numquam?</p>
+                            <img src="{% static 'img/3.jpg' %}" alt="">
+                        </div>
+
+                        <div id="postagem-paragrafo2">
+                            <img src="{% static 'img/4.jpg' %}" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, beatae aspernatur?
+                                Quibusdam ipsa soluta expedita, nisi consequuntur dolor perspiciatis asperiores aliquam
+                                ut sapiente officia aspernatur temporibus nobis dolorum, porro numquam?</p>
+                        </div>
+
+                        <div id="postagem-paragrafo3">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, beatae aspernatur?
+                                Quibusdam ipsa soluta expedita, nisi consequuntur dolor perspiciatis asperiores aliquam
+                                ut sapiente officia aspernatur temporibus nobis dolorum, porro numquam?</p>
+                            <img src="{% static 'img/5.jpg' %}" alt="">
+                        </div>
+
+                    </div> <!-- Fim da POstagem -->
+
+                    <div class="clear"></div>
+
+                </div> <!-- Fim da Galeria-postagem-->
+
+
             </div>
-            {% endfor %}
 
-        </div>
+            <div id="linha"></div>
 
+            <!-- Inicio da Startups-->
+            <h2 class="titulo-pagina">Nossos Parceiros</h2>
+            <div id="galeria-startups">
 
+                <a name="parceiros"></a>
+                <form action="" id="pesquisa">
+                    <input type="search" placeholder="Pesquisar...">
+                    <i class="fas fa-search"></i>
+                </form>
 
-        <footer id="footer-main"></footer>
+                {% for i in '123456'|make_list %}
+                <div class="galeria">
+                    <img src="{% static 'img/startups-01.png' %}" alt="startup">
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, sequi
+                        exercitationem sed explicabo rem consequatur illum architecto molestias nesciunt? Aliquid
+                        nobis praesentium odit ducimus libero expedita minus saepe nesciunt tempora!</p>
+                </div>
+                {% endfor %}
+                <div class="clear"></div>
+            </div> <!-- Fim da Startup-->
+
+        </div> <!-- Fim do Principol-->
+
     </main>
+
+    <footer id="footer-main"></footer>
+    <script src='{% static 'js/main.min.js' %}'></script>
     <script src="{% static 'js/header.js' %}"></script>
     <script src="{% static 'js/footer.js' %}"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/fe440c2625.js" crossorigin="anonymous"></script>
+
 </body>
 
 <a id="topo" href="#top">VOLTAR AO TOPO</a>
