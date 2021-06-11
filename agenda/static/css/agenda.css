@@ -1,0 +1,86 @@
+:root {
+    --cor-azul-padraoAC: #23AEB7;
+    --cor-vermelho-porto: #EA3B5A;
+    --cor-branco-gelo: #f1f1f0;
+    --cor-amarelo-lemon: #F3BF08;
+    --cor-roxoAC: #503488;
+    --cor-preto-corpo-texto: #212322;
+    --font-title: 'Poppins', sans-serif;
+    --font-paragraf: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-preto-corpo-texto);
+    font-size: 1em;
+}
+
+#principal {
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.titulo-pagina {
+    /* Agenda */
+    width: 260px;
+    font-size: 4em;
+    font-family: 'Poppins', sans-serif;
+    color: var(--cor-azul-padraoAC);
+    margin: 60px 0 20px;
+}
+
+.titulo-texto, .titulo-texto2  {
+    /* Armazem da criatividade - Parceiros do Armazém*/
+    font-family: 'Poppins', sans-serif;
+    color: var(--cor-branco-gelo);
+    font-size: 0.9em;
+    margin-top: 50px;
+    width: 500px;
+    text-align: justify;
+}
+
+.titulo-texto2 {
+    /* Parceiros do Armazém */
+    margin-top: 120px;
+
+}
+
+.titulo-texto h3, .titulo-texto2 h3 {
+    color: var(--cor-azul-padraoAC);
+    font-size: 2.2em;
+    margin-bottom: 5px;
+}
+
+#calendar {
+    width: 100%;
+    display: inline-block;
+    margin-top: 40px;
+    color: var(--cor-branco-gelo);
+}
+
+#calendar2 {
+    width: 100%;
+    display: inline-block;
+    margin-top: 40px;
+    color: var(--cor-branco-gelo);
+}
+
+#linha {
+    border-bottom: solid 10px #23AEB7;
+    width: 100%;
+    margin-top: 160px;
+}
+
+#topo {
+    float: right;
+    padding: 0 10px;
+    color: #212322;
+    margin-top: -16px;
+    font-size: 0.8em;
+    text-decoration: none;
+}
