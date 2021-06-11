@@ -193,3 +193,64 @@ body{
     margin-top: -20px;
     font-size: 17px;
 }
+.call-to-action-img{
+    background-image: url('https://imagens.ne10.uol.com.br/img/imagens/2020/02/01/98abe53ff9_armaze%CC%81m-da-criatividade-caruaru.jpg');
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+}
+
+.botoes {
+    font-family: var(--font-paragraf);
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--cor-preto-corpo-texto);
+    background-color: var(--cor--brancogelo);
+    padding: 5px 20px 5px 20px;
+    border-radius: 50px;
+    border: thick solid var(--cor-azul-padraoAC);
+    box-shadow: 10px 5px 5px 2px var(--cor-azul-padraoAC);
+    text-decoration: none;
+}
+
+.botoes:hover {
+    color: var(--cor--brancogelo);
+    background-color: var(--cor-azul-padraoAC);
+    box-shadow: 10px 5px 5px 2px var(--cor-preto-corpo-texto);
+    transition: 0.5s;
+}
+.call-to-action-content{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    margin-bottom: 50px;
+}
+
+.call-to-action-content-text-buttom{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.call-to-action-text p{
+    font-family: var(--font-paragraf);
+    color: var(--cor-preto-corpo-texto);
+    font-size: 20px;
+    text-align: justify;
+}
+
+.call-to-action-content-buttom{
+    margin-top: 20px;
+    margin-left: auto;
+}
+
+.call-to-action-content-img {
+    width: 45%
+
+}
