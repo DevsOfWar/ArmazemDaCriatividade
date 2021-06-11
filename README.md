@@ -27,7 +27,7 @@ Dependências podem ser instaladas através do PIP, usando os seguintes comandos
 > pip install django <br>
 > pip install django-heroku
 
-Em seguida baixe o repositório do GitHub na branch 'back-branch', você pode fazer o clone <br> 
+Em seguida baixe o repositório do GitHub na branch 'main', você pode fazer o clone <br> 
 ou baixar o arquivo .zip clicando no botão 'Code' e depois em 'Download as ZIP'. <br>
 Após baixar navegue até a pasta raiz do projeto (a pasta que contém o README) no <br> 
 CMD/Powershell/Bash e execute o script manage.py com o comando:
@@ -49,4 +49,4 @@ Pronto! Se tudo correu certo o terminal deve exibir uma mensagem como essa exibi
 O endereço HTTP informado no terminal é o que você vai precisar acessar para visualizar o site.
 ###Heroku
 Para acessar o projeto pelo Heroku é so acessar o endereço: https://dev-adc.herokuapp.com/ <br>
-Ele está atualizado de acordo com a última versão do repositório do GitHub na branch back-branch.
+Ele está atualizado de acordo com a última versão do repositório do GitHub na branch main.
